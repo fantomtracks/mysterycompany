@@ -1,21 +1,58 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0;
   padding: 0;
   background: #000;
   color: white;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 1rem;
 }
 
-.wip {
+.sr-only {
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
-  width: 100%;
 }
 
-a{
+.title {
+  margin: 2.5rem;
+  padding: 0;
+
+  img {
+    width: max(270px, 100%);
+  }
+}
+
+.tagline {
+  margin: 0 25px;
+  font-size: clamp(1.4rem, 1.06rem + 1.6vw, 2.5rem);
+  line-height: 1.7em;
+  max-width: 46ch;
+}
+
+.socials {
+  margin: 2.5rem;
+  font-size: clamp(1rem, 0.876rem + 0.582vw, 1.4rem);
+  line-height: 1.4;
+}
+
+a {
   color: white;
   transition: color 0.3s;
 
